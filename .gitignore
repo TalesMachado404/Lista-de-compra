@@ -1,15 +1,30 @@
+# Arquivos e pastas do Android Studio
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+.gradle/
+.idea/
 local.properties
+
+# Pastas de build
+/build/
+/app/build/
+/.cxx/
+/.externalNativeBuild/
+captures/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.log
+*.tmp
+*.temp
+
+# APKs e artefatos de build
+*.apk
+*.ap_
+
+# Keystores e arquivos sensíveis
+*.jks
+*.keystore
+*.key
