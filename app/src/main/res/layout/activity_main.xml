@@ -6,37 +6,41 @@
     android:orientation="vertical"
     android:padding="16dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/header_title"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#8000FF"
-        android:gravity="center"
-        android:text="Lista de Compras"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:padding="16dp"
-        android:elevation="4dp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txt_produto"
-        android:hint="Nome do produto"/>
+        android:layout_height="?attr/actionBarSize"
+        android:backgroundTint="#8000FF"
+        android:elevation="4dp"
+        app:title="Lista de Compras"
+        android:titleTextColor="#FFFFFF"
+        app:titleCentered="true" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="inserir"
-        android:id="@+id/btn_inserir"/>
+        android:text="Adicionar	itens"
+        android:id="@+id/btn_adicionar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL:	0,00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:id="@+id/txt_total"
+        />
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/list_view_produtos"></ListView>
+
 </LinearLayout>
